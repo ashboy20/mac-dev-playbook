@@ -49,12 +49,15 @@ dockitems_persist:
   - name: "Docker"
     path: "/Applications/Docker.app"
     pos: 9
+  - name: "Charles"
+    path: "/Applications/Charles.app"
+    pos: 10
   - name: "Spotify"
     path: "/Applications/Spotify.app"
-    pos: 10
+    pos: 11
   - name: "NordVPN"
     path: "/Applications/NordVPN.app"
-    pos: 11
+    pos: 12
 
 configure_sudoers: false
 sudoers_custom_config: ''
@@ -120,7 +123,7 @@ homebrew_cask_apps:
   - pycharm-ce
   - visual-studio-code
   - spotify
-  - noiton
+  - notion
   - obsidian
   - nordvpn
   - android-studio
