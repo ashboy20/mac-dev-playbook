@@ -105,10 +105,12 @@ homebrew_installed_packages:
   - xcodes
   - pyenv
   - neofetch
+  - font-hack-nerd-font
 
 homebrew_taps:
   - homebrew/core
   - homebrew/cask
+  - homebrew/cask-fonts
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
@@ -131,6 +133,7 @@ homebrew_cask_apps:
   - displaylink
   - iterm2
   - docker
+  - android-platform-tools
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps: []
