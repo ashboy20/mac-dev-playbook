@@ -115,15 +115,15 @@ homebrew_cask_apps:
   - slack
   - charles
   - pycharm-ce
-  # - visual-studio-code
-  # - spotify
-  # - noiton
-  # - obsidian
-  # - nordvpn
+  - visual-studio-code
+  - spotify
+  - noiton
+  - obsidian
+  - nordvpn
   - android-studio
   - appium-inspector
-  # - displaylink
-  # - iterm2
+  - displaylink
+  - iterm2
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps: []
