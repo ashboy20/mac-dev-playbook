@@ -46,12 +46,15 @@ dockitems_persist:
   - name: "iTerm"
     path: "/Applications/iTerm.app"
     pos: 8
+  - name: "Docker"
+    path: "/Applications/Docker.app"
+    pos: 9
   - name: "Spotify"
     path: "/Applications/Spotify.app"
-    pos: 9
+    pos: 10
   - name: "NordVPN"
     path: "/Applications/NordVPN.app"
-    pos: 10
+    pos: 11
 
 configure_sudoers: false
 sudoers_custom_config: ''
@@ -124,6 +127,7 @@ homebrew_cask_apps:
   - appium-inspector
   - displaylink
   - iterm2
+  - docker
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps: []
