@@ -2,20 +2,56 @@
 downloads: ~/.ansible-downloads/
 
 configure_dotfiles: true
-configure_terminal: true
-configure_osx: true
+configure_terminal: false
+configure_osx: false
 
 # Set to 'true' to configure the Dock via dockutil.
-configure_dock: false
-dockitems_remove: []
-# - Launchpad
-# - TV
-# - Podcasts
-# - 'App Store'
-dockitems_persist: []
-# - name: "Sublime Text"
-#   path: "/Applications/Sublime Text.app/"
-#   pos: 5
+configure_dock: true
+dockitems_remove:
+  - Launchpad
+  - TV
+  - Podcasts
+  - "App Store"
+  - Contacts
+  - Reminders
+  - Music
+  - Messages
+  - Maps
+  - Photos
+  - FaceTime
+  - News
+
+dockitems_persist:
+  - name: "Google Chrome"
+    path: "/Applications/Google Chrome.app"
+    pos: 1
+  - name: "Firefox"
+    path: "/Applications/Firefox.app"
+    pos: 2
+  - name: "Safari"
+    path: "/Applications/Safari.app"
+    pos: 3
+  - name: "Notion"
+    path: "/Applications/Notion.app"
+    pos: 4
+  - name: "Obsidian"
+    path: "/Applications/Obsidian.app"
+    pos: 5
+  - name: "Pycharm CE"
+    path: "/Applications/PyCharm CE.app"
+    pos: 6
+  - name: "Visual Studio Code"
+    path: "/Applications/Visual Studio Code.app"
+    pos: 7
+  - name: "iTerm"
+    path: "/Applications/iTerm.app"
+    pos: 8
+  - name: "Spotify"
+    path: "/Applications/Spotify.app"
+    pos: 9
+  - name: "NordVPN"
+    path: "/Applications/NordVPN.app"
+    pos: 10
 
 configure_sudoers: false
 sudoers_custom_config: ''
@@ -62,6 +98,9 @@ homebrew_installed_packages:
   - wget
   - wrk
   - zsh-history-substring-search
+  - xcodes
+  - pyenv
+  - neofetch
 
 homebrew_taps:
   - homebrew/core
@@ -74,12 +113,19 @@ homebrew_cask_apps:
   - dropbox
   - firefox
   - google-chrome
-  - handbrake
-  - licecap
   - sequel-ace
   - slack
-  - sublime-text
-  - transmit
+  - charles
+  - pycharm-ce
+  # - visual-studio-code
+  # - spotify
+  # - noiton
+  # - obsidian
+  # - nordvpn
+  - android-studio
+  - appium-inspector
+  # - displaylink
+  # - iterm2
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps: []
@@ -99,10 +145,9 @@ gem_packages: []
 # - name: bundler
 #   state: present # present/absent/latest, default: present
 #   version: "~> 1.15.1" # default: N/A
-npm_packages: []
-# - name: webpack
-#   state: present # present/absent/latest, default: present
-#   version: "^2.6" # default: N/A
+npm_packages:
+- name: appium
+  state: present
 pip_packages: []
 # - name: mkdocs
 #   state: present # present/absent/latest, default: present
